@@ -1,0 +1,178 @@
+
+ /* import type found */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: white;
+    background-color: rgba(110, 106, 106, 0.817);
+    font-family:'Poppins', sans-serif;
+    font-size:20px;
+}
+
+/* contenedor father */
+
+
+.container{
+    overflow: hidden; 
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content:center;
+    background-image: url(https://img.freepik.com/foto-gratis/arreglo-escritorio-vista-superior-efectivo_23-2149103929.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-position:center center;
+    
+}
+
+/* contenedor del formulario */
+.contenido-form{
+    margin-top:20px ;
+    width: 400px;
+    height:600px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(7, 6, 6, 0.974) 0%, rgba(110, 106, 106, 0.817) 100%);
+    box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.45);
+}
+
+/* contenedor of the buttons */
+.container-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 700px;
+}
+
+/* contenedor of second form  */
+.container-horas-extras{
+    margin-top:20px ;
+    width: 400px;
+    height:600px;
+    background: linear-gradient(90deg, rgba(7, 6, 6, 0.974) 0%, rgba(110, 106, 106, 0.817) 100%);
+    box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;     
+    border-radius:10px;
+}
+.barra-final{
+    width:100%;
+    height:100px;
+    background-color:black;
+}
+
+p{
+    margin-top: 5px;
+}
+
+label{
+    display: inline-block;
+    padding:5px 5px;
+    margin-top: 10px;  
+    margin-right: 50px;
+    margin-left: 20px;
+     
+}
+/* inputs type texts  */
+input[type="text"]{
+    transition: all ease .9s;
+    color: #ffff;
+    padding:10px 10px;
+    width: 80%;
+    border:none;
+    margin-left: 25px;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+    
+}
+
+/* inputs type texts efect for mouse  */
+input[type="text"]:focus{
+    color:  #307cff;
+    border-bottom:1px solid #307cff;
+}
+
+/*config global de los botones*/
+input[type="submit"], input[type="button"]{   
+    padding: 15px 15px 15px 15px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+    color:white;
+    width: 160px;
+    margin-left: 8px;
+    
+} 
+
+/*Colores de los botones */
+input[type="submit"],input[type="button"]{
+    background-color:#307cff;
+   
+}
+
+/*Efectos y animasiones de los botones*/
+input[type="button"]:hover ,input[type="submit"]:hover {
+    transition: all ease .9s;
+    background-color: rgb(0, 17, 255);
+    color:rgb(255, 255, 255);
+    
+    
+}
+
+/* select type of hours extras */
+select{
+    font-size: 15px;
+    color:white;
+    background-color:gray; 
+    width: 80%;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom:10px;       
+}
+
+/* inputs ocultos  */              
+input.ver{  
+    margin-top: 10px;
+    margin-bottom:10px;
+   
+}
+.ocultar{
+    transition: all ease .9s;
+    transform:translateX(100000px);
+    
+} 
+
+ /*Tabla: Moostrar datos*/
+ table{
+    margin-top: 20px;
+    text-align: center;
+    width: 50px;
+    height: 480px;
+    border: solid;
+    margin-left: 10px;
+    background: linear-gradient(90deg, rgba(40, 39, 39, 0.974) 0%, rgba(110, 106, 106, 0.817) 100%);
+ }
+ #encabezado{
+    /* paddign arriba,derecha,abajo,izquierda  */
+    padding: 1px 2px 1px 1px;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+
+ }
+#table-boody{
+    padding: 1px 2px 1px 1px;
+    
+    
+}
